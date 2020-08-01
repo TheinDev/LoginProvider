@@ -19,7 +19,34 @@ class ShowLogin extends StatelessWidget{
 
      builder: (context)=> getIt<UserData>(),
 
-     child: Consumer<UserData> (builder: (context,model,child) => Scaffold(),),
+     child: Consumer<UserData> (
+
+
+       builder: (context,model,child) =>
+
+
+           Scaffold(
+
+             backgroundColor: Colors.blue,
+
+             body: Column(
+
+               mainAxisSize: MainAxisSize.max,
+               mainAxisAlignment: MainAxisAlignment.center,
+
+               children: [
+
+
+                 FlatButton(
+
+                   color: Colors.white,
+                   child: Text("Login",style: TextStyle(color: Colors.black),),
+                 )
+               ],
+             ),
+
+
+           ),),
    );
   }
 
