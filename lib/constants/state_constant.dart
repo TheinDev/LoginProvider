@@ -1,0 +1,7 @@
+
+
+enum StateConstant {
+
+
+  FREE , BUSY
+}
